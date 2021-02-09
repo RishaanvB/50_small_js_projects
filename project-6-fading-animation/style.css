@@ -10,6 +10,27 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  margin: 10px;
+  background-color: rgb(76, 76, 119);
+  overflow-x: hidden;
+}
+
+h2 {
+  margin: 10px;
+}
+
+.box {
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px; 
+  height: 250px;
+  margin: 10px auto;
+  transform: translateX(400%);
+  transition: transform 0.3s ease;
+}
+
+.box.show{
+  transform: translateX(0);
 }

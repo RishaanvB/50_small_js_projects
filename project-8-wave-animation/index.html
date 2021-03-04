@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form input</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/49b8217457.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please Login</h1>
+      <form>
+        <div class="form-control">
+          <input type="email" id="email" required />
+          <label for="email">Email</label>
+        </div>
+
+        <div class="form-control">
+          <input type="password" id="password" />
+          <label for="password">Password</label>
+          <i class="fas fa-eye-slash"></i>
+          <i class="fas fa-eye"></i>
+        </div>
+
+        <button class="btn" type="submit">Login</button>
+        <p class="text">Don't have an account? <a href="#">Register</a></p>
+      </form>
+    </div>
+  </body>
+</html>

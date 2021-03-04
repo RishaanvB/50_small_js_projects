@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: steelblue;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background-color: rgba(26, 26, 48, 0.486);
+  padding: 100px 100px;
+  border-radius: 5px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.form-control {
+  position: relative;
+  margin: 50px 0 20px;
+  width: 240px;
+}
+
+input {
+  font-size: 1rem;
+  color: whitesmoke;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid whitesmoke;
+  display: block;
+  width: 100%;
+  padding: 5px 2px;
+}
+
+input:focus {
+  outline: 0;
+  border-bottom: 2px solid yellow;
+}
+
+.btn {
+  cursor: pointer;
+  width: 100%;
+  margin: 35px 0;
+  display: inline-block;
+  height: 2.3em;
+  font-size: 1.2rem;
+  color: black;
+  border: none;
+  border-radius: 2px;
+  transition: all 0.1s ease-in;
+}
+
+.btn:hover {
+  background-color: steelblue;
+  color: white;
+}
+
+.text {
+  text-align: center;
+}
+
+.fas {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.fa-eye.fas {
+  display: none;
+}
+
+.fa-eye-slash:active ~ .fas.fa-eye {
+  display: block;
+  color: white;
+}
+
+.fa-eye-slash:active {
+  opacity: 0;
+  color: white;
+}
+
+label {
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+span {
+  display: inline-block;
+  font-size: 1.2rem;
+  min-width: 5px;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+input:focus + label span {
+  color: yellow;
+  transform: translateY(-130%);
+}

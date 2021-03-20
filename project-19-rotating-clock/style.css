@@ -115,3 +115,28 @@ transform-origin: top center;
   color: grey;
   margin: 10px;
 }
+
+.tick{
+  color:rgb(35, 42, 107);
+  visibility: visible;
+  position: absolute;
+  transform: rotate(30deg);
+  z-index: 999;
+}
+
+.tock{
+  color:rgb(104, 30, 30);
+  visibility: hidden;
+  position: absolute;
+  transform: rotate(-30deg);
+  z-index: 999;
+
+}
+
+.tick.toggle-tick{
+  visibility: hidden;
+}
+.tock.toggle-tock{
+  visibility: visible;
+
+}

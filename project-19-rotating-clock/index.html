@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Rotating Clock</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <button class="toggle" id="toggle">Dark Theme</button>
+
+    <div class="clock-container">
+      <div class="clock">
+        <div class="needle hour" id="hour"></div>
+        <div class="needle minute" id="minute"></div>
+        <div class="needle second" id="second"></div>
+        <div class="center-point"></div>
+      </div>
+      <div class="time">12:00</div>
+      <div class="date">Monday, Nov 2</div>
+    </div>
+  </body>
+</html>

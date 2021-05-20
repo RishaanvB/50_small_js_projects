@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 1.5rem;
+}
+p {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+span {
+  font-weight: bold;
+}
+.fas {
+  color: rgb(192, 33, 33);
+}
+.img-container {
+  margin-top: 10px;
+  height: 440px;
+  width: 300px;
+  background-image: url("https://images.unsplash.com/photo-1560790671-b76ca4de55ef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=674&q=80");
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 10px auto;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
+}
+
+.img-container .fas {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  animation: grow 0.4s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}

@@ -1,6 +1,7 @@
 const container = document.querySelector(".img-container");
 const times = document.querySelector("#times");
 let timesClicked = 0;
+
 const showHeart = (e) => {
   const y = e.clientY;
   const x = e.clientX;
@@ -8,15 +9,12 @@ const showHeart = (e) => {
   const imgLeft = e.target.offsetLeft;
   const top = y - imgTop;
   const left = x - imgLeft;
-  const heart = document.createElement("i");
-  heart.classList.add("fas");
-  heart.classList.add("fa-heart");
-  container.appendChild(heart);
-  heart.style.top = `${top}px`;
-  heart.style.left = `${left}px`;
+  const heart = `<i class="fas fa-heart" style="top:${top}px; left:${left}px"></i>`;
+  container.insertAdjacentHTML("beforeend", heart);
+
   times.innerHTML = ++timesClicked;
   setTimeout(() => {
-    heart.remove();
+    container.firstChild.remove();
   }, 400);
 };
 
